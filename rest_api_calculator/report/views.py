@@ -44,6 +44,6 @@ class APIReportDashBoard(APIView):
             requested_at__range=[start_date, end_date])
 
         api_report = filtered_requests.values('api_name').annotate(
-            request_count=Count('api_name'), latency=Avg('latency') / 1000, error_count=error_count)
+            request_count=Count('api_name'), median_latency=Avg('latency') / 1000, error_count=error_count)
 
         return Response(list(api_report))
