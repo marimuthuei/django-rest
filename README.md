@@ -2,7 +2,7 @@
 Rest api for calculator application
 
 ## Requirements
- - Python 3
+ - Python 3.7
  - django ==2.2.5
  - djangorestframework == 3.10.3
 
