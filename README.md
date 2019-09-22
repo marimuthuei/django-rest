@@ -18,3 +18,5 @@ Rest api for calculator application
 > $ python manage.py runserver 0.0.0.0:$port 
 
  5. Browse the api using the `http://ipaddr:port`
+ 
+ 6. For authetication use the default username : admin and password:admin@123
